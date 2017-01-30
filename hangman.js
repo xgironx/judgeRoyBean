@@ -43,7 +43,8 @@ function comparo() {                                //console.log('filling in Va
     var thisGuess = playerTwosGuess;            //console.log('thisGuess:' + thisGuess);
     console.log('thisWord: ' + playerOnesWordInput);
     console.log('thisGuess:' + thisGuess);
-    if ($.inArray(thisGuess, playerOnesWordSplitArray) == true){
+    // if ($.inArray(thisGuess, playerOnesWordSplitArray) == true){
+        if ($.inArray(thisGuess, playerOnesWordSplitArray) !== -1){
       console.log('thisGuess:' + thisGuess + ' is in thisWord: ' + playerOnesWordInput);
       $('#playerTwosGuess').append('+');    //console.log('were on div: ' + i);
     }
